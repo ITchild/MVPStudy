@@ -13,17 +13,16 @@ import rx.Observable;
 
 public class MainModel {
 
-    private int flag = 0;
 
     @Inject
     public MainModel(){}
 
 
-    Observable<NewsList> getLatestNews(){
+    public Observable<NewsList> getLatestNews(){
         return ApiManager.getLatestNews();
     }
 
-    Observable<NewsList> getBeforeNews(String date){
+    public Observable<NewsList> getBeforeNews(String date){
         return ApiManager.getBeforeNews(date);
     }
 
