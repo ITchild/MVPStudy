@@ -24,6 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+       <activity android:name=".mvp.view.activity.NewsDetailActivity"></activity>
     </application>
 
 </manifest>
