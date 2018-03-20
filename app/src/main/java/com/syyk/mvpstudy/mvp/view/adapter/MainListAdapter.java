@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.syyk.mvpstudy.R;
 import com.syyk.mvpstudy.bean.News;
+import com.syyk.mvpstudy.mvp.view.activity.NewsDetailActivity;
 
 import java.util.List;
 
@@ -62,9 +63,9 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.NewsVi
 
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(mContext, NewDetailActivity.class);
-//                intent.putExtra("new",news.getId());
-//                mContext.startActivity(intent);
+                Intent intent = new Intent(mContext, NewsDetailActivity.class);
+                intent.putExtra("new",news.getId());
+                mContext.startActivity(intent);
             }
         };
     }

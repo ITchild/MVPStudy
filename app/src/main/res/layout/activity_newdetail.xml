@@ -8,13 +8,13 @@
     android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
-        android:id="@+id/appBarLayout"
+        android:id="@+id/newDetail_appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
 
         <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/collapsingToolbarLayout"
+            android:id="@+id/newDetail_collapsingToolbarLayout"
             android:layout_width="match_parent"
             android:layout_height="256dp"
             android:fitsSystemWindows="true"
@@ -34,7 +34,7 @@
                 app:layout_scrollFlags="scroll|snap|enterAlways|enterAlwaysCollapsed">
 
                 <ImageView
-                    android:id="@+id/iv_header"
+                    android:id="@+id/newDetail_header_iv"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:contentDescription="@null"
@@ -47,7 +47,7 @@
                     android:background="@drawable/bg_shadow_mask" />
 
                 <TextView
-                    android:id="@+id/tv_title"
+                    android:id="@+id/newDetail_title_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
@@ -58,7 +58,7 @@
                     tools:text="新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题，不忘初心，方得始终" />
 
                 <TextView
-                    android:id="@+id/tv_source"
+                    android:id="@+id/newDetail_source_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end|bottom"
@@ -70,7 +70,7 @@
 
             <include layout="@layout/include_toolbar" />
             <RelativeLayout
-                android:id="@+id/title_rl"
+                android:id="@+id/newDetail_title_rl"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
@@ -90,7 +90,7 @@
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView
-        android:id="@+id/nested_view"
+        android:id="@+id/newDetail_nested_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/appBarLayout"
@@ -98,7 +98,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <WebView
-            android:id="@+id/wv_news"
+            android:id="@+id/newDetail_news_wv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:isScrollContainer="false"
